@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Lora", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Cinzel", "Playfair Display", Georgia, serif;
+}
+
+/* Base quiet, executive & luxurious styling */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  letter-spacing: -0.011em;
+}
+
+/* Executive typography flourishes */
+h1, h2, h3, .font-serif {
+  letter-spacing: -0.02em;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+/* Tactile luxurious tab & button physics */
+.executive-tab-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.executive-tab-hover:hover {
+  transform: translateY(-1.5px) scale(1.05);
+}
+.executive-tab-hover:active {
+  transform: translateY(0.5px) scale(0.97);
+}
+
+/* Subtle warm executive scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 150, 100, 0.28);
+  border-radius: 9999px;
+  border: 1px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(184, 150, 100, 0.55);
+}

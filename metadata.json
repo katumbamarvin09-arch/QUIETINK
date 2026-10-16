@@ -1,0 +1,6 @@
+{
+  "name": "QuietInk",
+  "description": "Give Your Thoughts a Quiet Place. A peaceful digital journaling platform crafted for calm reflection, digital solitude, and mindful writing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
